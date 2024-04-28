@@ -94,6 +94,10 @@
     button:hover {
         background-color: #2575fc;
     }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
 </style>
 </head>
 <body>
@@ -118,11 +122,9 @@
 </footer>
 <form>
     <h2>Contact Us</h2>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Send</button>
-</form>
-<script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-       
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your Email">
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="
