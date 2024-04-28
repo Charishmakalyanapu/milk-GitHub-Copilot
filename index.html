@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milk Company</title>
+<style>
+    /* Basic reset and box sizing */
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        color: #fff;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    header a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .content {
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .product {
+        display: inline-block;
+        margin: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .product img {
+        width: 100%;
+        vertical-align: top;
+    }
+    .product h3, .product p {
+        padding: 15px;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.2);
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    form {
+        background: rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 10px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #6a11cb;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #2575fc;
+    }
+</style>
+</head>
+<body>
+<header>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+</header>
+<div class="content">
+    <div class="product" id="products">
+        <img src="https://via.placeholder.com/300x200.png?text=Fresh+Milk" alt="Fresh Milk">
+        <h3>Fresh Milk</h3>
+        <p>Our fresh milk is produced from high-quality cows, ensuring a rich and creamy taste that you can enjoy every day.</p>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/300x200.png?text=Cheese+Variety" alt="Cheese Variety">
+        <h3>Cheese Variety</h3>
+        <p>Explore our diverse selection of cheeses, each crafted with care and perfect for a variety of culinary uses.</p>
+    </div>
+</div>
+<footer>
+    © 2024 Milk Company. All rights reserved.
+</footer>
+<form>
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+</form>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+       
